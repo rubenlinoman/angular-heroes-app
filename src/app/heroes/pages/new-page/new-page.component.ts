@@ -99,14 +99,7 @@ export class NewPageComponent implements OnInit {
           .subscribe(() => {
             this.router.navigate(['/heroes']);
           });
-        // dialogRef.afterClosed().subscribe(result => {
-        //   if (!result) return;
 
-        //   this.heroesService.delteHeroById(this.currentHero.id)
-        //     .subscribe(wasDeleted => {
-        //       if(wasDeleted) this.router.navigate(['/heroes']);
-        //     });
-        // });
     }
 
     showSnackbar(message: string): void {
